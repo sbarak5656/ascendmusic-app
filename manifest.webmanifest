@@ -1,0 +1,17 @@
+{
+  "name": "Ascend Music",
+  "short_name": "Ascend Music",
+  "description": "A 12-week piano and guitar practice plan: today's session, metronome, theory, progress and song lessons.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1218",
+  "theme_color": "#2b4494",
+  "categories": ["music", "education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
