@@ -1197,7 +1197,7 @@ function lessonView(d) {
       h("div", { class: "tscroll", html: "<table><thead><tr><th>Section</th><th>Bars</th><th>Harmony</th><th>Notes</th></tr></thead><tbody>" +
         L.form.map(f => "<tr><td><strong>" + esc(f.section) + "</strong></td><td class=\"n\">" + esc(f.bars || "") + "</td><td>" + esc(f.harmony) + "</td><td>" + esc(f.notes) + "</td></tr>").join("") +
         "</tbody></table>" })) : null,
-    L.plan.length ? h("div", { class: "card" }, h("div", { class: "eyebrow" }, "Four sessions with this song"),
+    L.plan.length ? h("div", { class: "card" }, h("div", { class: "eyebrow" }, L.plan.length + (L.plan.length === 1 ? " session" : " sessions") + " with this song"),
       h("div", { class: "items" }, L.plan.map((s, i) => {
         const k = "s" + (i + 1);
         const row = h("button", { class: "item" + (progress[k] ? " done" : ""), type: "button" }, h("div", { class: "box", html: TICK }),
